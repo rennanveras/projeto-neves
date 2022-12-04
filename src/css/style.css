@@ -1,0 +1,568 @@
+*{
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 62.5% ;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:  #f8f9fa;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #fcbf49;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #fcbf49;  /* creates padding around scroll thumb */
+  }
+
+.header{
+    width: 120rem;
+    height: 10rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    width: 100vw;   
+    background-color: #023047;
+}
+
+header .logo{
+    font-family: 'Cormorant Garamond', "roboto", serif;
+    font-size:3.5rem;
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+
+header .logo h1:first-child{
+    margin-right: 1rem;
+}
+
+.nav-bar .ul-menu{
+    display:flex;
+}
+
+.ul-menu a{
+    display: inline-block;   
+    font-size: 2rem;
+    text-decoration:none;
+    color:#FFF;
+    margin-right: 1rem;
+    text-transform:uppercase;
+    cursor:pointer;
+    font-weight: 400;
+}
+
+.ul-menu a.active{
+    color: #ffd60a;
+}
+
+/* header end */
+
+.default.purple-{
+    background-color: #023047;
+    width: 100vw;
+}
+
+
+.default.white-{
+    background-color: #FFF;
+    width: 100vw;
+}
+
+.purple- .default-title,
+.default-desc{
+    color: #FFF;
+    text-align: center;
+}
+
+.white- .default-title,
+.default-desc{
+    color: #000;
+}
+
+.default-title{
+    font-size: 3.5rem;
+    font-family: 'Cormorant Garamond', "roboto", serif;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+
+.default-desc{
+    font-size: 1.7rem;
+}
+
+.default .area-body{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+
+
+
+/* start hero */
+
+.section-hero .default{
+}
+
+.section-hero .default.purple-{
+    background-image: url(../img/blue_texture_-_Vintage_Series_De.jpg);
+    background-size: cover;
+    
+}
+.hero{
+    padding-top: 4rem;
+    background-color: rgba(7, 39, 89, 0.8);
+}
+
+.section-hero .area-body{
+    display: flex;
+    height: auto;
+}
+
+
+.hero-left{
+    width: 50%;
+    color: #fff;
+    padding-top: 10rem;
+}
+
+.hero-left .hello-i-am{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+
+.hero-left .my-name{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+    text-shadow: -2px 3px  #555;
+}
+
+.hero-left .function{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.hero-left .hero-desc{
+    font-size: 1.6rem;
+    width: 70%;
+    line-height: 2.1rem;
+}
+
+.hero-left .social-midia{
+    display: flex;
+    height: 30rem;
+    align-items: center;
+}
+.social-midia .icons-redes-socias{
+    margin-right: 1rem;
+}
+
+.hero-left .social-midia a img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.area-body .hero-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.hero-right img{
+    height: 58rem;
+    z-index: 5;
+}
+
+.hero-right .circle{
+    position: absolute;
+    width: 55rem;
+    height: 55rem;
+    border-radius: 30rem;
+    background-color: #ffd500;  
+    z-index: 2;  
+}
+
+/* hero end */
+
+.ability .area-body{
+    height: 35rem;
+}
+
+.ability .area-cards{   
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+.ability .card{
+    width: 30%;
+    background-color: #023047;
+    height: 20rem;
+    border-radius:1.5rem
+}
+
+/* hero end */
+
+.sobre-mim .area-body{
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom:10rem;
+}
+
+.sobre-left img{
+    height: 55rem;
+    border-radius: 1.5rem;
+    margin-right: 4rem;
+}
+
+
+.sobre-right .sobre-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ffd500;
+    margin-bottom: 2rem;
+}
+
+.sobre-right .sobre-desc{
+    font-size: 1.8rem;
+    color: #FFF;
+}
+
+.sobre-right .sobre-desc p{
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+}
+
+.sobre-desc #sobre-p{
+    margin-bottom: 0;
+}
+
+/* end sobre mim */
+.professional-area-cards{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10rem;
+    padding-bottom:10rem;
+}
+
+
+.professional-card{
+    width: 28rem;
+    height: 28rem;
+    background-color: #023047;
+    border-radius: 1.5rem;
+}
+
+/* end abilidades profisionais  */
+
+.area-experience-work{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.area-experience-work{
+    padding-top: 2rem;
+    
+}
+
+.container-experience{
+    height: 30rem;
+    width: 50rem;
+    border-left: 0.1rem dashed #FFF;
+    
+}
+
+
+
+
+
+
+
+/* lllll */
+
+.r-title{
+    margin-top: var(--rTitleMarginTop, 0) !important;
+    margin-bottom: var(--rTitleMarginBottom, 0) !important;
+  }
+  
+  
+  .card__content p:not([class]){
+    line-height: var(--cssTypographyLineHeight, 1.78);
+    margin-top: var(--cssTypographyBasicMargin, 1em);
+    margin-bottom: 0;
+  }
+  
+  .card__content p:not([class]):first-child{
+    margin-top: 0;
+  }
+  
+  /*
+  text component
+  */
+  
+  .text{
+    display: var(--textDisplay, inline-flex);
+    font-size: var(--textFontSize, 1rem);  
+  }
+  
+  /*
+  time component
+  */
+  
+  /*
+  core styles
+  */
+  
+  .time{
+    display: var(--timeDisplay, inline-flex);
+  }
+  
+  /*
+  extensions
+  */
+  
+  .time__month{
+    margin-left: var(--timelineMounthMarginLeft, .25em);
+  }
+  
+  /*
+  skin
+  */
+  
+  .time{
+    padding:1rem 1.25rem ;
+    background-color: var(--timeBackgroundColor, #f0f0f0);
+  
+    font-size:1.4rem;
+    font-weight: 700;
+    text-transform: var(--timeTextTransform, uppercase);
+    color: var(--timeColor, currentColor);
+  }
+  
+  /*
+  card component
+  */
+  
+  /*
+  core styles
+  */
+  
+  .card{
+    padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
+  }
+  
+  .card__content{
+    margin-top: var(--cardContentMarginTop, .5rem);
+  }
+  
+  /*
+  skin
+  */
+  
+  .card{
+    border-radius: var(--timelineCardBorderRadius, 2px);
+    border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+    box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+    background-color: var(--timelineCardBackgroundColor, #fff);
+  }
+  
+  /*
+  extensions
+  */
+  
+  .card__title{
+    --rTitleMarginTop: var(--cardTitleMarginTop, 1rem);
+    font-size: var(--cardTitleFontSize, 1.25rem);
+  }
+  
+  /*
+  =====
+  CORE STYLES
+  =====
+  */
+  
+  .timeline{
+    display: var(--timelineDisplay, grid);
+    grid-row-gap: var(--timelineGroupsGap, 2rem);
+  }
+  
+  /*
+  1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too
+  */
+  
+  .timeline__year{
+    margin-bottom: 1.25rem; /* 1 */
+  }
+  
+  .timeline__cards{
+    display: var(--timeloneCardsDisplay, grid);
+    grid-row-gap: var(--timeloneCardsGap, 1.5rem);
+  }
+  
+  
+  /*
+  =====
+  SKIN
+  =====
+  */
+  
+  .timeline{
+    --uiTimelineMainColor: var(--timelineMainColor, #222);
+    --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
+  
+    border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .timeline__year{
+    --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
+    --timeColor: var(--uiTimelineSecondaryColor);
+    --timeBackgroundColor: var(--uiTimelineMainColor);
+    --timeFontWeight: var(--timelineYearFontWeight, 400);
+  }
+  
+  .timeline__card{
+    position: relative;
+    margin-left: var(--timelineCardLineGap, 1rem);
+  }
+  
+  /*
+  1. Stoping cut box shadow
+  */
+  
+  .timeline__cards{
+    overflow: hidden;
+    padding-top: .25rem; /* 1 */
+    padding-bottom: .25rem; /* 1 */
+  }
+  
+  .timeline__card::before{
+    content: "";
+    width: 100%;
+    height: var(--timelineCardLineWidth, 2px);
+    background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
+  
+    position: absolute;
+    top: var(--timelineCardLineTop, 1rem);
+    left: -50%;
+    z-index: -1;
+  }
+  
+  /*
+  =====
+  SETTINGS
+  =====
+  */
+  /**/
+  .timeline{
+    --timelineMainColor: #4557bb;
+  }
+  
+  /*
+  =====
+  DEMO
+  =====
+  */
+
+  .page::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+.page::-webkit-scrollbar-track {
+    background:  #f8f9fa;   
+    margin-top: rem;     
+    /* color of the tracking area */
+  }
+  
+.page::-webkit-scrollbar-thumb {
+    background-color: #fcbf49;    /* color of the scroll thumb */
+    border-radius: 1rem;       /* roundness of the scroll thumb */
+    border: 0.3px solid #fcbf49;  /* creates padding around scroll thumb */
+  }
+  
+  .page{
+    font-family:  Roboto, sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    height: 70rem;
+    overflow-y: scroll;
+    margin-right: 5rem;   
+    max-width: 60rem;
+    padding: 5rem 7rem 3rem;  
+    
+  }
+  
+  .card__content p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+  
+  .card__content p:last-child{
+    margin-bottom: 0;
+  }
+  
+  
+  
+  
+  .substack{
+    border:1px solid #EEE; 
+    background-color: #fff;
+    width: 100%;
+    max-width: 480px;
+    height: 280px;
+    margin: 1rem auto;;
+  }
+  
+  
+  .linktr{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .linktr__goal{
+    background-color: rgb(209, 246, 255);
+    color: rgb(8, 49, 112);
+    box-shadow: rgb(8 49 112 / 24%) 0px 2px 8px 0px;
+    border-radius: 2rem;
+    padding: .75rem 1.5rem;
+  }
+  
+  .r-link{
+      --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+      --uirLinkTextColor: var(--rLinkTextColor);
+      --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+  
+      display: var(--uirLinkDisplay) !important;
+      color: var(--uirLinkTextColor) !important;
+      text-decoration: var(--uirLinkTextDecoration) !important;
+  }
