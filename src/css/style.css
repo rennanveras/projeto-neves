@@ -37,6 +37,15 @@ body::-webkit-scrollbar {
     background-color: #023047;
 }
 
+
+header {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  z-index: 999;
+  border-bottom: 0.2rem solid #FFF ;
+}
+
 header .logo{
     font-family: 'Cormorant Garamond', "roboto", serif;
     font-size:3.5rem;
@@ -45,6 +54,7 @@ header .logo{
     text-transform: uppercase;
     font-weight: 600;
     border-bottom: 1px solid #fff;
+    float: left;
 }
 
 header .logo h1:first-child{
@@ -64,6 +74,7 @@ header .logo h1:first-child{
     text-transform:uppercase;
     cursor:pointer;
     font-weight: 400;
+    float: right;
 }
 
 .ul-menu a.active{
@@ -84,13 +95,13 @@ header .logo h1:first-child{
 }
 
 .purple- .default-title,
-.default-desc{
+.purple- .default-desc{
     color: #FFF;
     text-align: center;
 }
 
 .white- .default-title,
-.default-desc{
+.white- .default-desc{
     color: #000;
 }
 
@@ -116,6 +127,7 @@ header .logo h1:first-child{
 /* start hero */
 
 .section-hero .default{
+  padding-top: 10rem;
 }
 
 .section-hero .default.purple-{
@@ -277,292 +289,40 @@ header .logo h1:first-child{
 
 /* end abilidades profisionais  */
 
-.area-experience-work{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+.section-podcast .area-body{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.area-experience-work{
-    padding-top: 2rem;
-    
+.area-podcast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.container-experience{
-    height: 30rem;
-    width: 50rem;
-    border-left: 0.1rem dashed #FFF;
-    
+.area-podcast #podcast-podben{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.area-podcast .video-podcast{
+  margin-bottom: 5rem;
+}
+
+.section-podcast .area-body .default-title{
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  color: #ffd500;
+  font-family: "roboto",sans-serif;
+}
+
+.section-podcast .area-body .default-desc{
+  margin-bottom: 5rem;
+  font-size: 1.9rem;
 }
 
 
 
 
 
-
-
-/* lllll */
-
-.r-title{
-    margin-top: var(--rTitleMarginTop, 0) !important;
-    margin-bottom: var(--rTitleMarginBottom, 0) !important;
-  }
-  
-  
-  .card__content p:not([class]){
-    line-height: var(--cssTypographyLineHeight, 1.78);
-    margin-top: var(--cssTypographyBasicMargin, 1em);
-    margin-bottom: 0;
-  }
-  
-  .card__content p:not([class]):first-child{
-    margin-top: 0;
-  }
-  
-  /*
-  text component
-  */
-  
-  .text{
-    display: var(--textDisplay, inline-flex);
-    font-size: var(--textFontSize, 1rem);  
-  }
-  
-  /*
-  time component
-  */
-  
-  /*
-  core styles
-  */
-  
-  .time{
-    display: var(--timeDisplay, inline-flex);
-  }
-  
-  /*
-  extensions
-  */
-  
-  .time__month{
-    margin-left: var(--timelineMounthMarginLeft, .25em);
-  }
-  
-  /*
-  skin
-  */
-  
-  .time{
-    padding:1rem 1.25rem ;
-    background-color: var(--timeBackgroundColor, #f0f0f0);
-  
-    font-size:1.4rem;
-    font-weight: 700;
-    text-transform: var(--timeTextTransform, uppercase);
-    color: var(--timeColor, currentColor);
-  }
-  
-  /*
-  card component
-  */
-  
-  /*
-  core styles
-  */
-  
-  .card{
-    padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
-  }
-  
-  .card__content{
-    margin-top: var(--cardContentMarginTop, .5rem);
-  }
-  
-  /*
-  skin
-  */
-  
-  .card{
-    border-radius: var(--timelineCardBorderRadius, 2px);
-    border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
-    box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
-    background-color: var(--timelineCardBackgroundColor, #fff);
-  }
-  
-  /*
-  extensions
-  */
-  
-  .card__title{
-    --rTitleMarginTop: var(--cardTitleMarginTop, 1rem);
-    font-size: var(--cardTitleFontSize, 1.25rem);
-  }
-  
-  /*
-  =====
-  CORE STYLES
-  =====
-  */
-  
-  .timeline{
-    display: var(--timelineDisplay, grid);
-    grid-row-gap: var(--timelineGroupsGap, 2rem);
-  }
-  
-  /*
-  1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too
-  */
-  
-  .timeline__year{
-    margin-bottom: 1.25rem; /* 1 */
-  }
-  
-  .timeline__cards{
-    display: var(--timeloneCardsDisplay, grid);
-    grid-row-gap: var(--timeloneCardsGap, 1.5rem);
-  }
-  
-  
-  /*
-  =====
-  SKIN
-  =====
-  */
-  
-  .timeline{
-    --uiTimelineMainColor: var(--timelineMainColor, #222);
-    --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
-  
-    border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
-  }
-  
-  .timeline__year{
-    --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
-    --timeColor: var(--uiTimelineSecondaryColor);
-    --timeBackgroundColor: var(--uiTimelineMainColor);
-    --timeFontWeight: var(--timelineYearFontWeight, 400);
-  }
-  
-  .timeline__card{
-    position: relative;
-    margin-left: var(--timelineCardLineGap, 1rem);
-  }
-  
-  /*
-  1. Stoping cut box shadow
-  */
-  
-  .timeline__cards{
-    overflow: hidden;
-    padding-top: .25rem; /* 1 */
-    padding-bottom: .25rem; /* 1 */
-  }
-  
-  .timeline__card::before{
-    content: "";
-    width: 100%;
-    height: var(--timelineCardLineWidth, 2px);
-    background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
-  
-    position: absolute;
-    top: var(--timelineCardLineTop, 1rem);
-    left: -50%;
-    z-index: -1;
-  }
-  
-  /*
-  =====
-  SETTINGS
-  =====
-  */
-  /**/
-  .timeline{
-    --timelineMainColor: #4557bb;
-  }
-  
-  /*
-  =====
-  DEMO
-  =====
-  */
-
-  .page::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-.page::-webkit-scrollbar-track {
-    background:  #f8f9fa;   
-    margin-top: rem;     
-    /* color of the tracking area */
-  }
-  
-.page::-webkit-scrollbar-thumb {
-    background-color: #fcbf49;    /* color of the scroll thumb */
-    border-radius: 1rem;       /* roundness of the scroll thumb */
-    border: 0.3px solid #fcbf49;  /* creates padding around scroll thumb */
-  }
-  
-  .page{
-    font-family:  Roboto, sans-serif;
-    color: #222;
-    display: flex;
-    flex-direction: column;
-    margin-top: 7rem;
-    height: 70rem;
-    overflow-y: scroll;
-    margin-right: 5rem;   
-    max-width: 60rem;
-    padding: 5rem 7rem 3rem;  
-    
-  }
-  
-  .card__content p{
-    margin-top: 0;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    font-size: 1.6rem;
-  }
-  
-  .card__content p:last-child{
-    margin-bottom: 0;
-  }
-  
-  
-  
-  
-  .substack{
-    border:1px solid #EEE; 
-    background-color: #fff;
-    width: 100%;
-    max-width: 480px;
-    height: 280px;
-    margin: 1rem auto;;
-  }
-  
-  
-  .linktr{
-    display: flex;
-    justify-content: flex-end;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .linktr__goal{
-    background-color: rgb(209, 246, 255);
-    color: rgb(8, 49, 112);
-    box-shadow: rgb(8 49 112 / 24%) 0px 2px 8px 0px;
-    border-radius: 2rem;
-    padding: .75rem 1.5rem;
-  }
-  
-  .r-link{
-      --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
-      --uirLinkTextColor: var(--rLinkTextColor);
-      --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
-  
-      display: var(--uirLinkDisplay) !important;
-      color: var(--uirLinkTextColor) !important;
-      text-decoration: var(--uirLinkTextDecoration) !important;
-  }
