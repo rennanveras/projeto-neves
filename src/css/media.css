@@ -1,0 +1,31 @@
+@media (min-height:600px) and (max-height:800px){
+    .hero{
+        padding-top:0rem;
+        height: calc(100vh - 10rem);
+    }
+
+    .hero-left .hello-i-am{
+        font-size: 2rem;
+    }
+
+    .hero-left .my-name{
+        font-size: 4rem;
+    }
+
+    .hero-left .function{
+        font-size: 2rem;
+    }
+
+    .hero-left .social-midia{
+       height: 20rem;
+    }
+
+    .hero-right .circle{
+        width:47rem;
+        height:47rem;
+    }
+
+    .hero-right img{
+        height: 50rem;
+    }
+}

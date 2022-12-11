@@ -11,7 +11,7 @@ body{
     overflow-x: hidden;
 }
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 1.4rem;               /* width of the entire scrollbar */
   }
   
   body::-webkit-scrollbar-track {
@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     background-color: #fcbf49;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #fcbf49;  /* creates padding around scroll thumb */
+    border: 0.2rem solid #f8f9fa;  /* creates padding around scroll thumb */
   }
 
 .header{
@@ -34,15 +34,15 @@ body::-webkit-scrollbar {
 }
 .container{
     width: 100vw;   
-    background-color: #023047;
+    background-color: #0a2c4e;
 }
 
 
 header {
-  position: fixed;
-  overflow: hidden;
+  /* position: fixed;
+  overflow: hidden; */
   width: 100vw;
-  z-index: 999;
+  /* z-index: 999; */
   border-bottom: 0.2rem solid #FFF ;
 }
 
@@ -54,7 +54,7 @@ header .logo{
     text-transform: uppercase;
     font-weight: 600;
     border-bottom: 1px solid #fff;
-    float: left;
+    /* float: left; */
 }
 
 header .logo h1:first-child{
@@ -74,7 +74,7 @@ header .logo h1:first-child{
     text-transform:uppercase;
     cursor:pointer;
     font-weight: 400;
-    float: right;
+    /* float: right; */
 }
 
 .ul-menu a.active{
@@ -84,7 +84,7 @@ header .logo h1:first-child{
 /* header end */
 
 .default.purple-{
-    background-color: #023047;
+    background-color: #0a2c4e;
     width: 100vw;
 }
 
@@ -127,7 +127,7 @@ header .logo h1:first-child{
 /* start hero */
 
 .section-hero .default{
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
 }
 
 .section-hero .default.purple-{
@@ -142,7 +142,7 @@ header .logo h1:first-child{
 
 .section-hero .area-body{
     display: flex;
-    height: auto;
+    height: 100%;
 }
 
 
@@ -171,6 +171,7 @@ header .logo h1:first-child{
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
+    line-height: 3.5rem;
 }
 
 .hero-left .hero-desc{
@@ -230,25 +231,72 @@ header .logo h1:first-child{
 
 .ability .card{
     width: 30%;
-    background-color: #023047;
+    background-color: #0a2c4e;
     height: 20rem;
-    border-radius:1.5rem
+    border-radius:1.5rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
 }
 
-/* hero end */
+.ability .card .icon-card {
+    margin-top: 1rem;
+}
+
+.ability .card .title-card{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.ability .card .title-card p{
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.ability .card .desc-card p {
+    color: rgb(181, 179, 179);
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+/* ability end */
+.section-sobre-mim .default.purple-{
+   background-image: url(../img/viaturas-pg.jpg);    
+   background-size: cover;
+}
+
+.sobre-mim {
+    background-color: rgba(1, 31, 71, 0.9);
+}
+
 
 .sobre-mim .area-body{
     display: flex;
     padding-top: 10rem;
-    padding-bottom:10rem;
+    padding-bottom:5rem;
+}
+
+.sobre-left{
+    margin-right: 5rem;
 }
 
 .sobre-left img{
     height: 55rem;
     border-radius: 1.5rem;
     margin-right: 4rem;
+    margin-right: 1rem;
 }
 
+.bg-foto-sobre{
+    background-color: #ffbf00;
+    width: 39.5rem;
+    height: 55rem;
+    border-radius: 1.5rem;
+}
 
 .sobre-right .sobre-title{
     font-size: 3rem;
@@ -271,6 +319,25 @@ header .logo h1:first-child{
     margin-bottom: 0;
 }
 
+.sobre-right .button-sobre-mim{
+    width: 100%;
+    display: flex;
+    padding-top: 5rem;
+    align-items: center;
+}
+
+.sobre-right .button-sobre-mim button{
+    text-align: center;
+    background-color: #ffbf00;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 55rem;
+    font-size: 2rem;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 3px #000; 
+    cursor: pointer;
+}
+
 /* end sobre mim */
 .professional-area-cards{
     display: flex;
@@ -283,9 +350,11 @@ header .logo h1:first-child{
 .professional-card{
     width: 28rem;
     height: 28rem;
-    background-color: #023047;
+    background-color: #0a2c4e;
     border-radius: 1.5rem;
 }
+
+
 
 /* end abilidades profisionais  */
 
