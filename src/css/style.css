@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 }
 .container{
     width: 100vw;   
-    background-color: #0a2c4e;
+    background-color: #0D3A66;
 }
 
 
@@ -84,7 +84,7 @@ header .logo h1:first-child{
 /* header end */
 
 .default.purple-{
-    background-color: #0a2c4e;
+    background-color: #0D3A66;
     width: 100vw;
 }
 
@@ -231,7 +231,7 @@ header .logo h1:first-child{
 
 .ability .card{
     width: 30%;
-    background-color: #0a2c4e;
+    background-image:radial-gradient(circle,#08539d,#0a2c4e);
     height: 20rem;
     border-radius:1.5rem;
     display: flex;
@@ -285,17 +285,10 @@ header .logo h1:first-child{
 }
 
 .sobre-left img{
-    height: 55rem;
+    height: 52rem;
     border-radius: 1.5rem;
     margin-right: 4rem;
     margin-right: 1rem;
-}
-
-.bg-foto-sobre{
-    background-color: #ffbf00;
-    width: 39.5rem;
-    height: 55rem;
-    border-radius: 1.5rem;
 }
 
 .sobre-right .sobre-title{
@@ -342,16 +335,24 @@ header .logo h1:first-child{
 .professional-area-cards{
     display: flex;
     justify-content: space-between;
-    padding-top: 10rem;
     padding-bottom:10rem;
+    flex-wrap:wrap;
 }
 
 
 .professional-card{
     width: 28rem;
-    height: 28rem;
-    background-color: #0a2c4e;
+    height: 20rem;
+    background-image:radial-gradient(circle,#08539d,#0a2c4e);
     border-radius: 1.5rem;
+    margin-top: 5rem;
+}
+
+.professional .area-body .default-title{
+    text-align: center;
+    padding-top: 5rem;
+    text-transform: uppercase;
+		text-shadow: -0.1rem 0.1rem 0.1rem #999;
 }
 
 
@@ -383,7 +384,7 @@ header .logo h1:first-child{
   margin-bottom: 1rem;
   font-size: 4rem;
   color: #ffd500;
-  font-family: "roboto",sans-serif;
+	text-transform: uppercase;
 }
 
 .section-podcast .area-body .default-desc{
