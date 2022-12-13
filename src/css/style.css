@@ -43,7 +43,7 @@ header {
   overflow: hidden; */
   width: 100vw;
   /* z-index: 999; */
-  border-bottom: 0.2rem solid #FFF ;
+  /* border-bottom: 0.1rem solid #f1f1f1 ; */
 }
 
 header .logo{
@@ -90,7 +90,7 @@ header .logo h1:first-child{
 
 
 .default.white-{
-    background-color: #FFF;
+    background-color: #f1f1f1;
     width: 100vw;
 }
 
@@ -334,18 +334,43 @@ header .logo h1:first-child{
 /* end sobre mim */
 .professional-area-cards{
     display: flex;
-    justify-content: space-between;
-    padding-bottom:10rem;
     flex-wrap:wrap;
+    justify-content: space-around;
 }
 
 
 .professional-card{
     width: 28rem;
-    height: 20rem;
+    height: 28rem;
     background-image:radial-gradient(circle,#08539d,#0a2c4e);
     border-radius: 1.5rem;
     margin-top: 5rem;
+    padding: 2rem;
+    margin-right: 5rem;
+    cursor: default;
+}
+.professional-card:hover{
+    height: 30rem;
+    transition: all 0.6s;
+}
+.professional-card:hover h2{
+    font-size: 2.3rem;
+    transition: all 0.6s;
+}
+
+.professional-card:hover p{
+    font-size: 1.6rem;
+    transition: all 0.4s;
+}
+
+.professional-card:hover .professional-desc-card{
+    font-size:  1.8rem;
+    transition: all 0.6s;
+}
+
+.professional-card:hover li:nth-child(2){
+    padding-top: 0.5rem;
+
 }
 
 .professional .area-body .default-title{
@@ -355,19 +380,107 @@ header .logo h1:first-child{
 		text-shadow: -0.1rem 0.1rem 0.1rem #999;
 }
 
+.professional-title-card h2{
+    font-size: 2rem;
+    color: #ffbf00;
+    text-align: center;
+    text-transform: uppercase;
+}
 
+.professional-title-card p{
+    color: #b5b3b3;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+}
+
+.professional-desc-card{
+    font-size: 1.7rem;
+    color:#FFF;
+    text-align: center;
+}
+
+.professional-desc-card li{
+    padding-top: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: -0.1rem 0.1rem 0.3rem #000;
+}
+
+
+#profesional-gcm-desc-card{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 80%;
+   flex-direction: column;
+}
+
+
+
+#card-pro-1{
+    order:1;
+}
+#card-pro-2{
+    order:4;
+}
+#card-pro-3{
+    order:6;
+}
+#card-pro-4{
+    order:5;
+}
+#card-pro-5{
+    order: -1;
+}
+#card-pro-6{
+    order: -2;
+}
+
+.area-button-curriculo{
+    width: 100%;
+    display: flex;
+    padding-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+}
+
+.area-button-curriculo button{
+    text-align: center;
+    background-image: linear-gradient(to right, #ffbf00, #E6800B ) ;
+    padding: 1.5rem 2rem;
+    border-radius: 55rem;
+    border: none;
+    font-size: 2rem; 
+    box-shadow: 1px 1px 10px #555;
+    cursor: pointer;
+    margin-bottom:5rem;
+}
+.area-button-curriculo button a {
+    text-decoration: none;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.area-button-curriculo button:hover{
+    padding: 1.7rem 2.2rem;
+    font-size: 2.2rem;
+    margin-bottom: 4.7rem;
+    background-image: linear-gradient(to right, #e3ab02, #cf7d1f ) ;
+    transition: all 1s ease;
+}
 
 /* end abilidades profisionais  */
 
 .section-podcast .area-body{
   padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .area-podcast {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .area-podcast #podcast-podben{
