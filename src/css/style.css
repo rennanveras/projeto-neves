@@ -5,24 +5,26 @@
 html{
     font-size: 62.5% ;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 body{
     overflow-x: hidden;
+    background-color: #0D3A66;
 }
 body::-webkit-scrollbar {
-    width: 1.4rem;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background:  #f8f9fa;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #fcbf49;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 0.2rem solid #f8f9fa;  /* creates padding around scroll thumb */
-  }
+    width: 1.4rem; 
+}
+
+body::-webkit-scrollbar-track {
+background:  #f8f9fa; 
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #fcbf49;
+border-radius: 20px; 
+border: 0.2rem solid #f8f9fa;
+}
 
 .header{
     width: 120rem;
@@ -39,11 +41,7 @@ body::-webkit-scrollbar {
 
 
 header {
-  /* position: fixed;
-  overflow: hidden; */
   width: 100vw;
-  /* z-index: 999; */
-  /* border-bottom: 0.1rem solid #f1f1f1 ; */
 }
 
 header .logo{
@@ -54,7 +52,6 @@ header .logo{
     text-transform: uppercase;
     font-weight: 600;
     border-bottom: 1px solid #fff;
-    /* float: left; */
 }
 
 header .logo h1:first-child{
@@ -74,7 +71,6 @@ header .logo h1:first-child{
     text-transform:uppercase;
     cursor:pointer;
     font-weight: 400;
-    /* float: right; */
 }
 
 .ul-menu a.active{
@@ -319,17 +315,6 @@ header .logo h1:first-child{
     align-items: center;
 }
 
-.sobre-right .button-sobre-mim button{
-    text-align: center;
-    background-color: #ffbf00;
-    padding: 1.5rem 2rem;
-    border: none;
-    border-radius: 55rem;
-    font-size: 2rem;
-    color: #f1f1f1;
-    text-shadow: 1px 1px 3px #000; 
-    cursor: pointer;
-}
 
 /* end sobre mim */
 .professional-area-cards{
@@ -340,58 +325,38 @@ header .logo h1:first-child{
 
 
 .professional-card{
-    width: 28rem;
-    height: 28rem;
+    width: 32rem;
+    height: 32rem;
     background-image:radial-gradient(circle,#08539d,#0a2c4e);
     border-radius: 1.5rem;
     margin-top: 5rem;
     padding: 2rem;
     margin-right: 5rem;
     cursor: default;
-}
-.professional-card:hover{
-    height: 30rem;
-    transition: all 0.6s;
-}
-.professional-card:hover h2{
-    font-size: 2.3rem;
-    transition: all 0.6s;
-}
-
-.professional-card:hover p{
-    font-size: 1.6rem;
-    transition: all 0.4s;
-}
-
-.professional-card:hover .professional-desc-card{
-    font-size:  1.8rem;
-    transition: all 0.6s;
-}
-
-.professional-card:hover li:nth-child(2){
-    padding-top: 0.5rem;
-
+    text-transform: uppercase;
 }
 
 .professional .area-body .default-title{
     text-align: center;
     padding-top: 5rem;
     text-transform: uppercase;
-		text-shadow: -0.1rem 0.1rem 0.1rem #999;
+		text-shadow: -0.1rem 0.1rem 0.1rem #999;  
 }
 
 .professional-title-card h2{
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #ffbf00;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 0.5rem; 
 }
+
+
 
 .professional-title-card p{
     color: #b5b3b3;
     text-align: center;
     font-size: 1.4rem;
-    padding-top: 0.5rem;
 }
 
 .professional-desc-card{
@@ -401,10 +366,11 @@ header .logo h1:first-child{
 }
 
 .professional-desc-card li{
-    padding-top: 2rem;
+    padding-bottom: 1rem;
     text-decoration: none;
     display: inline-block;
     text-shadow: -0.1rem 0.1rem 0.3rem #000;
+    padding-top: 1rem;
 }
 
 
@@ -444,32 +410,9 @@ header .logo h1:first-child{
     align-items: center;
     justify-content: center;
     height: 15rem;
+    padding-bottom: 5rem;
 }
 
-.area-button-curriculo button{
-    text-align: center;
-    background-image: linear-gradient(to right, #ffbf00, #E6800B ) ;
-    padding: 1.5rem 2rem;
-    border-radius: 55rem;
-    border: none;
-    font-size: 2rem; 
-    box-shadow: 1px 1px 10px #555;
-    cursor: pointer;
-    margin-bottom:5rem;
-}
-.area-button-curriculo button a {
-    text-decoration: none;
-    color: #f1f1f1;
-    text-shadow: 1px 1px 3px #000;
-}
-
-.area-button-curriculo button:hover{
-    padding: 1.7rem 2.2rem;
-    font-size: 2.2rem;
-    margin-bottom: 4.7rem;
-    background-image: linear-gradient(to right, #e3ab02, #cf7d1f ) ;
-    transition: all 1s ease;
-}
 
 /* end abilidades profisionais  */
 
@@ -483,11 +426,6 @@ header .logo h1:first-child{
     justify-content: space-evenly;
 }
 
-.area-podcast #podcast-podben{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 
 .area-podcast .video-podcast{
   margin-bottom: 5rem;
@@ -497,7 +435,7 @@ header .logo h1:first-child{
   margin-bottom: 1rem;
   font-size: 4rem;
   color: #ffd500;
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .section-podcast .area-body .default-desc{
@@ -505,7 +443,240 @@ header .logo h1:first-child{
   font-size: 1.9rem;
 }
 
+/* end podcast */
+
+.section-book .default.white-{
+   background-image: url(../img/bg-cinza.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.section-book .book{
+    background-color: rgba(204, 202, 202, 0.5);
+    
+}
+
+.section-book .default-title,
+.section-book .default-desc{
+    text-align: center;
+}
+
+.section-book .default-title{
+    font-size: 4rem;
+    text-transform: uppercase;
+    
+}
+
+.section-book .default-desc{
+   font-size: 1.9rem; 
+   color: #333;
+}
+
+.section-book .default-desc h3{
+    font-size: 2.2rem; 
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+ }
+
+ .section-book .default-desc span{
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', "roboto", serif;
+    font-weight: bold;
+ }
+
+.section-book .area-body{
+    padding-top: 5rem;
+
+}
+
+.img-book{
+    display: flex;
+    justify-content: center;
+    
+}
 
 
+.img-book img{
+    height: 45rem;
+    box-shadow: 4px 4px 5px #555;
+    margin-top: 5rem;
+}
 
+.button-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #ffbf00;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.7rem;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #e3ab02;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* end books */
+
+
+.area-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1{
+    padding-top: 3rem;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-1 .default-title{
+    font-family: "roboto";
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.area-button-footer .btn:link,
+.area-button-footer .btn:visited  {
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.button-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
+.footer-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-2 .footer-social{
+    display: flex;
+    align-items: center;
+}
+
+.footer-2 .footer-social .follow-me-footer{
+    font-size: 1.7rem;
+    color: #f1f1f1;
+}
+
+.footer-2 .footer-social .icons-social-footer{
+    margin-right: 1rem;
+}
+
+.footer-2 .footer-social img{
+    height: 3rem;
+}
+
+.footer-2 .footer-social-2{
+    display: flex;
+    align-items: center;
+}
+
+.footer-2 .footer-social-2 img{
+    height: 3rem;
+    
+    margin-right: 0.5rem;
+}
+
+.footer-2 .footer-social-2 .e-mail-link{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 1.5rem;
+}
+
+.footer-2 .footer-social-2 .e-mail-link:hover{
+    text-decoration: underline;
+    color: #6fb0f1;
+}
+
+.footer-3 {
+    margin: 2rem;
+}
+
+.footer-3 .copy-footer{
+    display: flex;
+    justify-content: center;
+    color: #b5b3b3;
+    font-size: 1.3rem;
+
+}
+
+.footer-3 .copy-footer a{
+    color: #b5b3b3 ;
+    text-decoration: none;
+}
+
+.footer-3 .copy-footer a:hover{
+    text-decoration: underline;
+}
 
