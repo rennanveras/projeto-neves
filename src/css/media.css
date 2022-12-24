@@ -50,8 +50,120 @@
         width: 60rem;
     }
 
+    .nav-bar .ul-menu{
+        display: none;
+        position: absolute;
+        width: 80%;
+        height: 50%;
+        background-color: #0D3A66;
+        margin-top: 3rem;
+        z-index: 50;
+    }
+
+    .nav-bar li{
+        margin-bottom: 1rem;
+    }
+
     .default .area-body{
         width: 60rem;
+    }
+
+    /* hero area */
+    .hero-left{
+        width: 45%;
+        margin-top:0;
+    }
+
+    .hero{
+        height: calc(100vh - 15rem);
+    }
+
+    .hero-left .hello-i-am{
+        font-size:1.6rem;
+        padding-top: 3rem;
+    }
+
+    .hero-left .my-name{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-left .function{
+        font-size: 1.6rem;
+        line-height:3rem;
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-left .function .function-3{
+        line-height: 1.7rem;
+    }
+
+    .hero-left .hero-desc{
+        font-size:1.4rem;
+        width: 80%;
+    }
+
+    .hero-left .social-midia{
+        height: 8rem;
+    }
+
+    .hero-left .social-midia a img {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .hero-left .social-midia a .hero-icon-linkedin{
+        height: 3.7rem;
+        width: 3.7rem;           
+    }
+
+    .hero-right img{
+        height:40rem;
+    }
+    .hero-right .circle{
+        width: 38rem;
+        height: 38rem;
+    }
+
+    /* destaques area */
+    .ability .card{
+        height: 30rem;
+        padding: 1rem;
+    }
+
+    /* sobre mim area */
+
+    .sobre-mim{  
+        padding-bottom: 3rem;
+
+    }
+
+    .sobre-mim .area-body{
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+
+    .sobre-right .button-sobre-mim{
+        padding-top: 2rem;
+    }
+    .sobre-left{
+        margin-top: 10rem;
+    }
+
+    /* Area qualificação */
+
+    .professional-area-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .professional-card{
+        height: 35rem;
+    }
+
+    iframe{
+        width: 29rem;
+        height: 15rem;
     }
 
 }
