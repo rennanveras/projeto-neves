@@ -29,3 +29,29 @@
         height: 50rem;
     }
 }
+
+@media (min-width:950px) and (max-width:1250px){
+    .header{
+        width: 92rem;
+    }
+    .default .area-body{
+        width: 92rem;
+    }
+    
+    /* area podcast */
+    iframe{
+        width: 39rem;
+        height: 22rem;
+    }
+}
+
+@media (min-width:490px) and (max-width:950px){
+    .header{
+        width: 60rem;
+    }
+
+    .default .area-body{
+        width: 60rem;
+    }
+
+}
