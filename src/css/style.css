@@ -73,7 +73,7 @@ header .logo h1:first-child{
     font-weight: 400;
 }
 
-.ul-menu a.active{
+.ul-menu a:hover{
     color: #ffd60a;
 }
 
@@ -145,13 +145,14 @@ header .logo h1:first-child{
 .hero-left{
     width: 50%;
     color: #fff;
-    padding-top: 10rem;
+    margin-top: 5rem;
 }
 
 .hero-left .hello-i-am{
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+    padding-top: 5rem;
 }
 
 
@@ -178,7 +179,7 @@ header .logo h1:first-child{
 
 .hero-left .social-midia{
     display: flex;
-    height: 30rem;
+    height: 20rem;
     align-items: center;
 }
 .social-midia .icons-redes-socias{
@@ -218,15 +219,16 @@ header .logo h1:first-child{
 }
 
 .ability .area-cards{   
-    display: flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5rem;
     height: 100%;
     align-items: center;
 
 }
 
 .ability .card{
-    width: 30%;
+    
     background-image:radial-gradient(circle,#08539d,#0a2c4e);
     height: 20rem;
     border-radius:1.5rem;
@@ -318,14 +320,13 @@ header .logo h1:first-child{
 
 /* end sobre mim */
 .professional-area-cards{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
 }
 
 
 .professional-card{
-    width: 32rem;
+    
     height: 32rem;
     background-image:radial-gradient(circle,#08539d,#0a2c4e);
     border-radius: 1.5rem;
@@ -421,9 +422,8 @@ header .logo h1:first-child{
 }
 
 .area-podcast {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display:grid;
+    grid-template-columns:repeat(2,1fr)
 }
 
 
@@ -496,11 +496,18 @@ header .logo h1:first-child{
     
 }
 
+.area-book{
+    height: 52rem;
+}
 
 .img-book img{
     height: 45rem;
     box-shadow: 4px 4px 5px #555;
     margin-top: 5rem;
+}
+.img-book img:hover{
+    height: 48rem;
+    transition: all .2s; 
 }
 
 .button-book{
@@ -600,8 +607,8 @@ header .logo h1:first-child{
 
 .area-button-footer .btn:link,
 .area-button-footer .btn:visited  {
-    padding: 10px 30px;
-    border-radius: 5px;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
 }
 
 .button-footer{
@@ -609,6 +616,10 @@ header .logo h1:first-child{
     justify-content: center;
     align-items: center;
     height: 10rem;
+}
+
+.button-footer .btn::after {
+    border-radius: 0.5rem;
 }
 
 .footer-2{
@@ -680,3 +691,23 @@ header .logo h1:first-child{
     text-decoration: underline;
 }
 
+.button-return-top{
+    width: 6rem;
+    height: 6rem;
+    background-color: #e3ab02;
+    position: fixed;
+    z-index: 999;
+    border: none;
+    border-radius: 3rem;
+    right: 2rem;
+    bottom: 2rem;
+    cursor:pointer;
+    display: none;
+    transition: all .2s;
+    
+    opacity: 0.7;
+}
+
+.button-return-top img{
+    height: 3rem;
+}
