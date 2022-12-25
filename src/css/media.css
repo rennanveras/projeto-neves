@@ -1,7 +1,7 @@
 @media (min-height:500px) and (max-height:800px){
     .hero{
         padding-top:0rem;
-        height: calc(100vh - 10rem);
+        height: calc(100vh- 10rem);
     }
 
     .hero-left .hello-i-am{
@@ -39,30 +39,106 @@
     }
     
     /* area podcast */
+    .area-podcast{ 
+        margin-bottom: 3rem;
+    }
     iframe{
         width: 39rem;
         height: 22rem;
     }
 }
 
-@media (min-width:490px) and (max-width:950px){
+@media (max-width:950px){
+
+    .button-return-top{
+        width: 4rem;
+        height:4rem
+    }
+
+    .button-return-top img{
+        height: 2rem;
+    }
+
     .header{
         width: 60rem;
     }
 
+    header .logo{
+        font-size: 3.3rem;
+    }
+
     .nav-bar .ul-menu{
-        display: none;
+        display: block; 
+        flex-direction: column;
         position: absolute;
-        width: 80%;
-        height: 50%;
+        top: 7rem;
+        right: 0;
+        width: 100%;
         background-color: #0D3A66;
         margin-top: 3rem;
-        z-index: 50;
+        z-index: 1000;
+        height: 0rem;
+        transition: all .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .nav-bar .menu-mobile{
+        display: flex;
+        padding: .8rem 1rem;
+        font-size: 1.8rem;
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+        gap:5rem
+    }
+
+    .nav-bar .line-menu{
+        width: 3rem;
+        border-top: 0.3rem solid #FFF;
+    }
+
+    .nav-bar .line-menu::after,
+    .nav-bar .line-menu::before{
+        content:'';
+        display: block;
+        width: 3rem;
+        height: 0.3rem;
+        background-color: #FFF;
+        margin-top:.7rem;
+        transition: .3s;
+        position: relative;
+    }
+
+    .nav-bar.active .line-menu{
+        border-top-color:transparent ;
+
+    }
+
+    .nav-bar.active .line-menu::before{
+        transform: rotate(135deg);
+    }
+
+    .nav-bar.active .line-menu::after{
+        transform: rotate(-135deg);
+        top:-1rem;
+    }
+
+
+    .nav-bar.active .ul-menu{
+        height: calc(100vh - 7rem);
+        visibility: visible;
+        overflow-y: auto;
     }
 
     .nav-bar li{
-        margin-bottom: 1rem;
+       padding: 1.5rem 0;
+       margin: 0 1rem;
+       border-bottom: 1px solid rgba(204, 204, 204, 0.438);
     }
+    .nav-bar li:hover{
+        background-color: #0c355f;
+     }
 
     .default .area-body{
         width: 60rem;
@@ -72,10 +148,6 @@
     .hero-left{
         width: 45%;
         margin-top:0;
-    }
-
-    .hero{
-        height: calc(100vh - 15rem);
     }
 
     .hero-left .hello-i-am{
@@ -147,10 +219,21 @@
     .sobre-right .button-sobre-mim{
         padding-top: 2rem;
     }
-    .sobre-left{
-        margin-top: 10rem;
+
+    .sobre-right .button-sobre-mim{
+        width: 65%;
     }
 
+    .sobre-left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+    }
+
+    .sobre-left img{
+        height: 42rem;
+    }
     /* Area qualificação */
 
     .professional-area-cards {
@@ -161,9 +244,262 @@
         height: 35rem;
     }
 
-    iframe{
-        width: 29rem;
+    /* area podcast */
+    .section-podcast .area-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .area-podcast{
+        grid-template-columns: 1fr;
+        margin-bottom: 3rem;
+    }
+
+    
+    /* area book */
+    .area-book{
+        height: 45rem;
+    }
+
+    .img-book img{
+        height: 40rem;
+    }
+
+    .img-book img:hover{
+        height: 43rem;
+    }
+    .button-book{
         height: 15rem;
     }
 
+}
+
+@media (max-width:650px){
+    .header{
+        width: 40rem;
+        height: 8rem;
+    }
+
+    header .logo{
+        font-size: 3rem;
+    }
+    .default .area-body{
+        width: 40rem;
+    }
+    .nav-bar .ul-menu{
+        top:5rem;
+    }
+    /* area hero */
+    .hero{
+        padding-top:0rem;
+        
+    }
+
+    .section-hero .area-body {
+        height: calc(100vh - 8rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-left{
+        width: 100%;
+    }
+
+    .hero-left .hello-i-am{
+        font-size: 2rem;
+    }
+
+    .hero-left .my-name{
+        font-size: 3.2rem;
+    }
+
+    .hero-left .function{
+        width: 100%;
+        font-size: 2.0rem;
+    }
+
+    .hero-left .function .function-3{
+        line-height: 3rem;
+    }
+
+    .hero-left .hero-desc{
+        width: 98%;
+        font-size: 1.7rem;
+    }
+
+    .hero-left .social-midia{
+        justify-content: center;
+    }
+    
+    .hero-left .social-midia a img{
+        width: 4rem;
+        height:4rem;
+    }
+
+    .hero-left .social-midia a .hero-icon-tiktok{
+        width: 3.8rem;
+        height:3.8rem;
+    }
+
+    .hero-left .social-midia a .hero-icon-linkedin{
+        width: 4.2rem;
+        height:4.2rem;
+    }
+
+    .hero-right{
+        flex: 1;
+    }
+
+    
+
+    /* area destaque */
+
+    .ability .area-body{
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .ability .area-cards{
+        grid-template-columns:1fr;
+        row-gap: 2rem;
+    }
+
+    .ability .card{
+        height:23rem
+    }
+    /* area sobre */
+
+    .sobre-right .button-sobre-mim{
+        width: 50%;
+    }
+
+    /* area qualificações */
+
+    .professional-area-cards{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+    .professional-card{
+        height: 23rem;
+    }
+
+    .professional-card .li-segurança-publica{
+        line-height: 2rem;
+    }
+
+
+    /* area podcast */
+    .area-podcast{
+        grid-template-columns:1fr;
+        row-gap:3rem;
+    }
+
+    iframe{
+        width: 39rem;
+        height: 22rem;
+    }
+
+    .section-podcast .area-body .default-title{
+        font-size:3.5rem
+    }
+    /* area book */
+
+    .section-book .default-title{
+        font-size:3.5rem;
+    }
+
+    .section-book .default-desc h3{
+        font-size:2rem
+    }
+
+    .section-book .default-desc{
+        font-size: 1.6rem;
+    }
+
+    /* footer */
+
+    .footer-1 .default-title{
+        font-size:2.5rem;
+    }
+
+    .footer-2{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+@media (max-width:420px){
+    .header{
+        width: 32rem;
+    }
+
+    header .logo{
+        font-size: 2.7rem;
+    }
+
+    .default .area-body{
+        width: 32rem;
+    }
+    /* area hero */
+
+    .hero-right .circle{
+        width: 32rem;
+         height: 38rem;
+    }
+
+    /* area podcast */
+
+    iframe{
+        width: 31.5rem;
+        height: 19rem;
+    }
+}
+
+@media (max-width:500px) and (max-height:820px){
+    .hero-left .hello-i-am{
+        font-size: 1.8rem;
+    }
+
+    .hero-left .my-name{
+        font-size: 2.8rem;
+    }
+
+    .hero-left .function{
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .hero-left .function .function-3{
+        line-height: 3rem;
+    }
+
+    .hero-left .hero-desc{
+        font-size: 1.6rem;
+    }
+
+    .hero-left .social-midia{
+    }
+
+    .hero-left .social-midia {
+        padding-top: 0.5rem;
+        height: 5rem;
+    }
+    .hero-right .circle{
+        width: 31rem;
+    height: 31rem;
+    }
+
+    .hero-right img{
+        height: 33rem;
+    }
+
+    /* area qualificações */
+    .professional-card{
+        height: 25rem;
+    }
 }

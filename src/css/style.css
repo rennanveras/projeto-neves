@@ -6,6 +6,7 @@ html{
     font-size: 62.5% ;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -25,6 +26,28 @@ background-color: #fcbf49;
 border-radius: 20px; 
 border: 0.2rem solid #f8f9fa;
 }
+
+.button-return-top{
+    width: 6rem;
+    height: 6rem;
+    background-color: #e3ab02;
+    position: fixed;
+    z-index: 999;
+    border: none;
+    border-radius: 3rem;
+    right: 2rem;
+    bottom: 2rem;
+    cursor:pointer;
+    display: none;
+    transition: all .2s;
+    
+    opacity: 0.7;
+}
+
+.button-return-top img{
+    height: 3rem;
+}
+
 
 .header{
     width: 120rem;
@@ -58,25 +81,14 @@ header .logo h1:first-child{
     margin-right: 1rem;
 }
 
+.nav-bar {
+    display: flex;
+}
+
 .nav-bar .ul-menu{
     display:flex;
 }
 
-.nav-bar .menu-mobile{
-    width: 4rem;
-    height: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.nav-bar .menu-mobile .line-menu{
-    width: 4rem;
-    height: 0.3rem;
-    background-color: #fff  ;
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
 
 .ul-menu a{
     display: inline-block;   
@@ -89,8 +101,13 @@ header .logo h1:first-child{
     font-weight: 400;
 }
 
+.menu-mobile{
+    display: none;
+}
+
 .ul-menu a:hover{
     color: #ffd60a;
+    background-color: #0D3A66;
 }
 
 /* header end */
@@ -138,10 +155,6 @@ header .logo h1:first-child{
 
 /* start hero */
 
-.section-hero .default{
-  /* padding-top: 10rem; */
-}
-
 .section-hero .default.purple-{
     background-image: url(../img/blue_texture_-_Vintage_Series_De.jpg);
     background-size: cover;
@@ -155,6 +168,8 @@ header .logo h1:first-child{
 .section-hero .area-body{
     display: flex;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y:hidden
 }
 
 
@@ -228,7 +243,7 @@ header .logo h1:first-child{
     width: 55rem;
     height: 55rem;
     border-radius: 30rem;
-    background-color: #ffd500;  
+    background-color: #EECF51;  
     z-index: 2;  
 }
 
@@ -332,10 +347,14 @@ header .logo h1:first-child{
 }
 
 .sobre-right .button-sobre-mim{
-    width: 100%;
     display: flex;
     padding-top: 5rem;
     align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+.lala{
+    display: flex;
 }
 
 
@@ -343,6 +362,7 @@ header .logo h1:first-child{
 .professional-area-cards{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
+    gap: 4rem;
 }
 
 
@@ -353,7 +373,6 @@ header .logo h1:first-child{
     border-radius: 1.5rem;
     margin-top: 5rem;
     padding: 2rem;
-    margin-right: 5rem;
     cursor: default;
     text-transform: uppercase;
 }
@@ -362,7 +381,7 @@ header .logo h1:first-child{
     text-align: center;
     padding-top: 5rem;
     text-transform: uppercase;
-		text-shadow: -0.1rem 0.1rem 0.1rem #999;  
+	text-shadow: -0.1rem 0.1rem 0.1rem #999;  
 }
 
 .professional-title-card h2{
@@ -404,8 +423,6 @@ header .logo h1:first-child{
    flex-direction: column;
 }
 
-
-
 #card-pro-1{
     order:1;
 }
@@ -445,12 +462,9 @@ header .logo h1:first-child{
 .area-podcast {
     display:grid;
     grid-template-columns:repeat(2,1fr);
+    row-gap: 5rem;
 }
 
-
-.area-podcast .video-podcast{
-  margin-bottom: 5rem;
-}
 
 .section-podcast .area-body .default-title{
   margin-bottom: 1rem;
@@ -619,7 +633,7 @@ header .logo h1:first-child{
 }
 
 .footer-1 .default-title{
-    font-family: "roboto";
+    font-family: "roboto", sans-serif;
     font-size: 3rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -711,23 +725,3 @@ header .logo h1:first-child{
     text-decoration: underline;
 }
 
-.button-return-top{
-    width: 6rem;
-    height: 6rem;
-    background-color: #e3ab02;
-    position: fixed;
-    z-index: 999;
-    border: none;
-    border-radius: 3rem;
-    right: 2rem;
-    bottom: 2rem;
-    cursor:pointer;
-    display: none;
-    transition: all .2s;
-    
-    opacity: 0.7;
-}
-
-.button-return-top img{
-    height: 3rem;
-}
