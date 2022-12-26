@@ -39,9 +39,6 @@
     }
     
     /* area podcast */
-    .area-podcast{ 
-        margin-bottom: 3rem;
-    }
     iframe{
         width: 39rem;
         height: 22rem;
@@ -245,17 +242,9 @@
     }
 
     /* area podcast */
-    .section-podcast .area-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    
 
     .area-podcast{
         grid-template-columns: 1fr;
-        margin-bottom: 3rem;
     }
 
     

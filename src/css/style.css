@@ -48,7 +48,6 @@ border: 0.2rem solid #f8f9fa;
     height: 3rem;
 }
 
-
 .header{
     width: 120rem;
     height: 10rem;
@@ -61,7 +60,6 @@ border: 0.2rem solid #f8f9fa;
     width: 100vw;   
     background-color: #0D3A66;
 }
-
 
 header {
   width: 100vw;
@@ -89,7 +87,6 @@ header .logo h1:first-child{
     display:flex;
 }
 
-
 .ul-menu a{
     display: inline-block;   
     font-size: 2rem;
@@ -112,19 +109,18 @@ header .logo h1:first-child{
 
 /* header end */
 
-.default.purple-{
+.default.blue-{
     background-color: #0D3A66;
     width: 100vw;
 }
-
 
 .default.white-{
     background-color: #f1f1f1;
     width: 100vw;
 }
 
-.purple- .default-title,
-.purple- .default-desc{
+.blue- .default-title,
+.blue- .default-desc{
     color: #FFF;
     text-align: center;
 }
@@ -150,12 +146,9 @@ header .logo h1:first-child{
     margin: 0 auto;
 }
 
-
-
-
 /* start hero */
 
-.section-hero .default.purple-{
+.section-hero .default.blue-{
     background-image: url(../img/blue_texture_-_Vintage_Series_De.jpg);
     background-size: cover;
     
@@ -172,7 +165,6 @@ header .logo h1:first-child{
     overflow-y:hidden
 }
 
-
 .hero-left{
     width: 50%;
     color: #fff;
@@ -185,7 +177,6 @@ header .logo h1:first-child{
     margin-bottom: 0.5rem;
     padding-top: 5rem;
 }
-
 
 .hero-left .my-name{
     font-family: 'Cormorant Garamond', serif;
@@ -251,7 +242,6 @@ header .logo h1:first-child{
 
 .ability .area-body{
     height: 35rem;
-    
 }
 
 .ability .area-cards{   
@@ -260,18 +250,15 @@ header .logo h1:first-child{
     column-gap: 2.5rem;
     height: 100%;
     align-items: center;
-
 }
 
 .ability .card{
-    
     background-image:radial-gradient(circle,#08539d,#0a2c4e);
     height: 20rem;
     border-radius:1.5rem;
     display: flex;
     flex-direction:column;
     align-items: center;
-
 }
 
 .ability .card .icon-card {
@@ -298,7 +285,7 @@ header .logo h1:first-child{
 }
 
 /* ability end */
-.section-sobre-mim .default.purple-{
+.section-sobre-mim .default.blue-{
    background-image: url(../img/viaturas-pg.jpg);    
    background-size: cover;
 }
@@ -306,7 +293,6 @@ header .logo h1:first-child{
 .sobre-mim {
     background-color: rgba(1, 31, 71, 0.9);
 }
-
 
 .sobre-mim .area-body{
     display: flex;
@@ -353,10 +339,6 @@ header .logo h1:first-child{
     width: 50%;
     justify-content: center;
 }
-.lala{
-    display: flex;
-}
-
 
 /* end sobre mim */
 .professional-area-cards{
@@ -364,7 +346,6 @@ header .logo h1:first-child{
     grid-template-columns:repeat(3, 1fr);
     gap: 4rem;
 }
-
 
 .professional-card{
     
@@ -392,8 +373,6 @@ header .logo h1:first-child{
     padding-bottom: 0.5rem; 
 }
 
-
-
 .professional-title-card p{
     color: #b5b3b3;
     text-align: center;
@@ -413,7 +392,6 @@ header .logo h1:first-child{
     text-shadow: -0.1rem 0.1rem 0.3rem #000;
     padding-top: 1rem;
 }
-
 
 #profesional-gcm-desc-card{
    display: flex;
@@ -452,19 +430,21 @@ header .logo h1:first-child{
     padding-bottom: 5rem;
 }
 
-
 /* end abilidades profisionais  */
 
 .section-podcast .area-body{
   padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .area-podcast {
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    row-gap: 5rem;
+    gap: 5rem;
+    margin-bottom: 4rem;
 }
-
 
 .section-podcast .area-body .default-title{
   margin-bottom: 1rem;
@@ -487,8 +467,7 @@ header .logo h1:first-child{
 }
 
 .section-book .book{
-    background-color: rgba(204, 202, 202, 0.5);
-    
+    background-color: rgba(204, 202, 202, 0.5); 
 }
 
 .section-book .default-title,
@@ -499,7 +478,6 @@ header .logo h1:first-child{
 .section-book .default-title{
     font-size: 4rem;
     text-transform: uppercase;
-    
 }
 
 .section-book .default-desc{
@@ -522,13 +500,11 @@ header .logo h1:first-child{
 
 .section-book .area-body{
     padding-top: 5rem;
-
 }
 
 .img-book{
     display: flex;
     justify-content: center;
-    
 }
 
 .area-book{
@@ -619,7 +595,6 @@ header .logo h1:first-child{
 }
 
 /* end books */
-
 
 .area-footer{
     display: flex;
