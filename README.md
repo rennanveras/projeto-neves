@@ -9,8 +9,7 @@
 
 ## Visualizar 🖼️
 
-<div>
-  <img src="src/github/desktop.gif.gif" alt="">
-  <img src="src/github/tablet.gif.gif" alt="">
-  <img src="src/github/mobile.gif.gif" alt="">
+<div display="">
+  <img width="300px" margin-right="30px" src="src/github/mobile.gif" alt="">
+  <img width="500px" src="src/github/desktop.gif" alt="">
 </div>
