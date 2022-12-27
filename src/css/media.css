@@ -37,6 +37,36 @@
     .default .area-body{
         width: 92rem;
     }
+
+    /* area hero */
+    .hero{
+        padding-top:0 ;
+    }
+    .hero-right .circle{
+        width: 46rem;
+        height: 46rem;
+    }
+
+    .hero-right img {
+        height: 49rem;
+    }
+
+    .hero-left .hello-i-am{
+        font-size:2.2rem;
+    }
+
+    .hero-left .my-name{
+        font-size: 3.5rem;
+    }
+
+    .hero-left .function{
+        font-size: 2rem;
+    }
+
+    /* area qualificações  */
+    .professional-card {
+        height: 31rem;
+    }
     
     /* area podcast */
     iframe{
@@ -278,6 +308,10 @@
     .default .area-body{
         width: 40rem;
     }
+
+    .default-title{
+        font-size:3.5rem
+    }
     .nav-bar .ul-menu{
         top:5rem;
     }
@@ -393,14 +427,8 @@
         height: 22rem;
     }
 
-    .section-podcast .area-body .default-title{
-        font-size:3.5rem
-    }
+    
     /* area book */
-
-    .section-book .default-title{
-        font-size:3.5rem;
-    }
 
     .section-book .default-desc h3{
         font-size:2rem
@@ -425,6 +453,7 @@
 @media (max-width:420px){
     .header{
         width: 32rem;
+        padding: 0 1rem;
     }
 
     header .logo{
@@ -434,17 +463,62 @@
     .default .area-body{
         width: 32rem;
     }
+
+    .default-title{
+        font-size:3rem;
+    }
+
     /* area hero */
 
+    .hero-left{
+        padding: 0 1rem;
+    }
+
+    .hero-left .social-midia {
+        height: 6.5rem;
+    }
+
     .hero-right .circle{
-        width: 32rem;
+        width: 30rem;
          height: 38rem;
     }
 
+    /* area destaque */
+
+    .ability .area-body {
+        padding: 2rem 1rem;
+    } 
+
+    /* area sobre */
+    .sobre-right{
+        padding: 0 1rem;
+    }
+
+    .sobre-right .button-sobre-mim {
+        width: 36%;
+    }
+
+    /* area qualificações */
+    .professional-area-cards{
+        padding: 0 1rem;
+    }
+
+    .professional-desc-card li{
+        padding-bottom: 0;
+    }
+
+    .professional-card {
+        height: 28rem;
+    }
+
+
     /* area podcast */
+    .section-podcast .area-body .default-desc {
+        font-size: 1.7rem;
+    }
 
     iframe{
-        width: 31.5rem;
+        width: 31rem;
         height: 19rem;
     }
 }
@@ -480,7 +554,7 @@
     }
     .hero-right .circle{
         width: 31rem;
-    height: 31rem;
+        height: 31rem;
     }
 
     .hero-right img{
